@@ -1,0 +1,130 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, Helvetica, Sans-serif;
+	font-size: 120%;
+}
+h1{
+	text-align: center;
+}
+div.Contenedor > div{
+	float: left;
+	
+	border: 2px solid black;
+	width: 33%;
+	height: 1000px;
+}
+#col01 {
+	background-color: red;
+	position: relative;
+}
+#col02 {
+	
+	background-color: blue;
+	overflow:auto;
+	
+}
+#col03 {
+	
+	background-color: green;
+	position: relative;
+}
+div#col01 > p
+{
+	width: 40%;
+	height: 50px;
+	background-color: white;
+	border: 1px solid black;
+}
+div#col01 > p:nth-child(1) {
+	position: absolute;
+	top: -21px;
+	left: 0px;
+}
+div#col01 > p:nth-child(2) {
+	position: absolute;
+	top: -21px;
+	right:  0px;
+}
+div#col01 > p:nth-child(3) {
+	position: absolute;
+	bottom:  40%;
+	left: 30%;
+}
+div#col01 > p:nth-child(4) {
+	position: absolute;
+	bottom:  -21px;
+	left: 0px;
+}
+div#col01 > p:nth-child(5) {
+	position: absolute;
+	bottom:  -21px;
+	right:  0px;
+}
+h2{
+	text-align: center;
+	color: LightGray;
+}
+.p02 {
+	width: 45%;
+	float: left;
+	margin-right: 1.5%;
+	margin-left: 2.5%;
+}
+
+div#col02 > p.p02:nth-child(4),div#col02 > p.p02:nth-child(7){
+	width: 95%
+}
+div#col02 > p.p02:nth-child(4),div#col02 > p.p02:nth-child(5){
+	clear: left;
+}
+div#col02:hover{
+	color: white;
+}
+div#col02:hover:active{
+	color: red;
+}
+div#col03 > p{
+	width: 60%;
+	height: 30%;
+	border: 1px solid black; 
+	background-color: white;
+}
+div#col03 > p:nth-child(1){
+
+	background-image: url("http://imagenpng.com/wp-content/uploads/2016/02/imagenes-graciosas-7-256x256.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top:-21px;
+	right: 0px;
+}
+div#col03 > p:nth-child(2){
+
+	background-image: url("http://www-2.dc.uba.ar/materias/ipdi/imagenes/lena.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: -21px;
+	left:  0px;
+}
+
+div#col03 > p:nth-child(1):hover{
+
+	background: url("http://fotosparafondo.com/wp-content/uploads/2016/10/imagenes-movibles-para-celular-samsung.jpg") no-repeat center white;
+}
+
+div#col03 > p:nth-child(1):active{
+
+	background: url("http://2.bp.blogspot.com/--6FfSb3a_JQ/T40Mdd6YkGI/AAAAAAAANww/Q5j6OmVfAPQ/s1600/13.png") no-repeat center white;
+}
+div#col03 > p:nth-child(2):hover{
+
+	background: url("http://www.cs.cmu.edu/~chuck/lennapg/len_std.jpg") no-repeat center white;
+}
+
+div#col03 > p:nth-child(2):active{
+
+	background: url("http://cse3521.artifice.cc/images/lena-45-rotate.jpg") no-repeat center white;
+}
